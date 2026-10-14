@@ -1,0 +1,55 @@
+project:
+  slug: zz-balm
+  mode: open_source_headless
+  random_seed: 20261014
+
+source_paper:
+  doi: 10.1016/j.jtice.2018.07.011
+  title: "Utilizing Lemon Balm extract as an effective green corrosion inhibitor for mild steel in 1M HCl solution: A detailed experimental, molecular dynamics, Monte Carlo and quantum mechanics study"
+  year: 2018
+
+molecules:
+  - caryophyllene
+  - germacrene
+  - citral
+  - luteolin
+  - chlorogenic_acid
+  - rosmarinic_acid
+  protonation_states: [neutral, protonated]
+
+quantum_chemistry:
+  reference_method_reported_in_paper:
+    software: Gaussian 09
+    geometry_optimization: "HF/6-31G**"
+    dft: "B3LYP/6-311G**"
+    solvent_model: "PCM/SCRF water"
+  open_source_stage:
+    software: xtb
+    status: "screening/surrogate only; not equivalent to reported DFT"
+    method: "GFN2-xTB"
+  charge_analysis:
+    reported_method: "ChelpG"
+    status: "must be implemented and validated separately for the chosen workflow"
+
+surface_adsorption:
+  reported_surface: "Fe(110)"
+  reported_slab_thickness_angstrom: 15.0
+  reported_replication: [14, 14]
+  reported_vacuum_angstrom: 30.0
+  note: "Verify slab dimensions, constraints, and adsorption-energy convention before production calculations."
+
+molecular_dynamics:
+  reported_software: "Materials Studio Forcite"
+  reported_force_field: "COMPASS"
+  reported_water_molecules: 600
+  reported_water_density_g_cm3: 1.0
+  reported_ensemble: NVT
+  reported_thermostat: "Nose-Hoover"
+  reported_timestep_fs: 1.0
+  reported_duration_ps: 1000
+  note: "Do not substitute force fields or water models without documenting the change. Validate metal/inhibitor/water interactions."
+
+outputs:
+  directory: results
+  write_software_manifest: true
+  write_config_snapshot: true
