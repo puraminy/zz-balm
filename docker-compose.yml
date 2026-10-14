@@ -1,0 +1,16 @@
+services:
+  reproduce:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: lemon-balm-corrosion-reproducibility:latest
+    working_dir: /work
+    volumes:
+      - ./config:/work/config:ro
+      - ./structures:/work/structures:ro
+      - ./paper_data:/work/paper_data:ro
+      - ./results:/work/results
+    environment:
+      MPLBACKEND: Agg
+      PYTHONUNBUFFERED: "1"
+    command: ["audit"]
