@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this workflow, cite the source article and the repository release."
+title: "Lemon Balm Corrosion Inhibitor — Headless Reproducibility Pipeline"
+type: software
+abstract: "Docker-first, command-line workflow scaffold for auditing and reimplementing computational methods reported for lemon balm extract as a corrosion inhibitor."
+license: MIT
+keywords:
+  - corrosion inhibition
+  - molecular dynamics
+  - quantum chemistry
+  - reproducibility
+  - Docker
+references:
+  - type: article
+    title: "Utilizing Lemon Balm extract as an effective green corrosion inhibitor for mild steel in 1M HCl solution: A detailed experimental, molecular dynamics, Monte Carlo and quantum mechanics study"
+    authors:
+      - family-names: Asadi
+    year: 2018
+    doi: "10.1016/j.jtice.2018.07.011"
