@@ -1,4 +1,4 @@
-FROM mambaorg/micromamba:1.5.12
+FROM mambaorg/micromamba:2.9.0-ubuntu22.04
 
 LABEL org.opencontainers.image.title="Lemon Balm Corrosion Reproducibility"
 LABEL org.opencontainers.image.description="Headless open-source workflow for corrosion-inhibitor computational study reproduction"
