@@ -13,6 +13,7 @@ RUN micromamba install -y -n base -f /tmp/environment.yml && micromamba clean --
 
 WORKDIR /work
 COPY --chown=$MAMBA_USER:$MAMBA_USER . /work
+ENV PATH="/opt/conda/bin:${PATH}"
 ENV PYTHONUNBUFFERED=1
 ENV MPLBACKEND=Agg
 ENTRYPOINT ["python", "-m", "src.cli"]

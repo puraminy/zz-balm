@@ -15,7 +15,8 @@ molecules:
   - luteolin
   - chlorogenic_acid
   - rosmarinic_acid
-  protonation_states: [neutral, protonated]
+
+protonation_states: [neutral, protonated]
 
 quantum_chemistry:
   reference_method_reported_in_paper:
