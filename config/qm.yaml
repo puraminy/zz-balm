@@ -1,0 +1,114 @@
+# Preflight schema v1. null means unresolved, NOT an engine default.
+# This template intentionally fails preflight. No study structures are supplied.
+# See docs/QM_PREFLIGHT.md before populating these records.
+schema_version: 1
+method: GFN2-xTB
+solvent:
+  model: null  # Explicitly choose none or ALPB; ALPB is not Gaussian PCM.
+  solvent: null  # water for ALPB, null for none
+  reference_state: null  # gsolv/reference/bar1M for ALPB, null for none
+settings:
+  optimization_level: null
+  accuracy: null
+  electronic_temperature_kelvin: null
+  max_scc_iterations: null
+  max_optimization_cycles: null
+  timeout_seconds: null
+  threads: null
+states:
+  - molecule_id: caryophyllene
+    state_id: null
+    input_file: null  # Repository-relative XYZ path, original input kept unchanged.
+    coordinate_units: null  # Must explicitly be angstrom.
+    charge: null
+    multiplicity: null
+    protonation_state_id: null
+    conformer_id: null
+    identity:
+      molecule_id: caryophyllene
+      chemical_name: Caryophyllene
+      source: null
+      isomer_identifier: null
+      connectivity_reference: null
+      protonation_description: null
+      protonation_site: null
+  - molecule_id: germacrene
+    state_id: null
+    input_file: null  # Repository-relative XYZ path, original input kept unchanged.
+    coordinate_units: null  # Must explicitly be angstrom.
+    charge: null
+    multiplicity: null
+    protonation_state_id: null
+    conformer_id: null
+    identity:
+      molecule_id: germacrene
+      chemical_name: Germacrene
+      source: null
+      isomer_identifier: null
+      connectivity_reference: null
+      protonation_description: null
+      protonation_site: null
+  - molecule_id: citral
+    state_id: null
+    input_file: null  # Repository-relative XYZ path, original input kept unchanged.
+    coordinate_units: null  # Must explicitly be angstrom.
+    charge: null
+    multiplicity: null
+    protonation_state_id: null
+    conformer_id: null
+    identity:
+      molecule_id: citral
+      chemical_name: Citral
+      source: null
+      isomer_identifier: null
+      connectivity_reference: null
+      protonation_description: null
+      protonation_site: null
+  - molecule_id: luteolin
+    state_id: null
+    input_file: null  # Repository-relative XYZ path, original input kept unchanged.
+    coordinate_units: null  # Must explicitly be angstrom.
+    charge: null
+    multiplicity: null
+    protonation_state_id: null
+    conformer_id: null
+    identity:
+      molecule_id: luteolin
+      chemical_name: Luteolin
+      source: null
+      isomer_identifier: null
+      connectivity_reference: null
+      protonation_description: null
+      protonation_site: null
+  - molecule_id: chlorogenic_acid
+    state_id: null
+    input_file: null  # Repository-relative XYZ path, original input kept unchanged.
+    coordinate_units: null  # Must explicitly be angstrom.
+    charge: null
+    multiplicity: null
+    protonation_state_id: null
+    conformer_id: null
+    identity:
+      molecule_id: chlorogenic_acid
+      chemical_name: Chlorogenic acid
+      source: null
+      isomer_identifier: null
+      connectivity_reference: null
+      protonation_description: null
+      protonation_site: null
+  - molecule_id: rosmarinic_acid
+    state_id: null
+    input_file: null  # Repository-relative XYZ path, original input kept unchanged.
+    coordinate_units: null  # Must explicitly be angstrom.
+    charge: null
+    multiplicity: null
+    protonation_state_id: null
+    conformer_id: null
+    identity:
+      molecule_id: rosmarinic_acid
+      chemical_name: Rosmarinic acid
+      source: null
+      isomer_identifier: null
+      connectivity_reference: null
+      protonation_description: null
+      protonation_site: null

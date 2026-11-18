@@ -93,12 +93,19 @@ def main():
         nargs="?",
         default="audit",
     )
-    stage = parser.parse_args().stage
+    parser.add_argument('--preflight', action='store_true', help='Validate QM inputs without running engines')
+    args = parser.parse_args()
+    stage = args.stage
+    if args.preflight and stage != 'qm':
+        parser.error('--preflight is only supported for qm')
     if stage == "audit":
         raise SystemExit(audit())
     elif stage == "test":
         import pytest
         raise SystemExit(pytest.main(["-q", str(ROOT / "tests")]))
+    elif stage == 'qm' and args.preflight:
+        from .qm import run_preflight
+        raise SystemExit(run_preflight())
     else:
         raise SystemExit(
             f"Stage '{stage}' is scaffolded but not implemented. "
