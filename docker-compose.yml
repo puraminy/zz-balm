@@ -5,6 +5,7 @@ services:
       dockerfile: Dockerfile
     image: lemon-balm-corrosion-reproducibility:latest
     working_dir: /work
+    user: "1000:1000"
     volumes:
       - ./config:/work/config:ro
       - ./structures:/work/structures:ro
