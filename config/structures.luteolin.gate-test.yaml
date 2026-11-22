@@ -1,0 +1,33 @@
+# Candidate configuration for validating the RDKit preparation workflow.
+# Chemical identity and protonation state are NOT approved for this study.
+
+schema_version: 1
+
+settings:
+  random_seed: 2026
+  num_conformers: 1
+  mmff94: false
+  mmff_max_iterations: 200
+
+structures:
+  - molecule_id: luteolin
+    chemical_name: Luteolin
+
+    source: PubChem
+    source_identifier: "CID:5280445"
+    source_kind: database
+
+    isomeric_smiles: "O=c1cc(-c2ccc(O)c(O)c2)oc2cc(O)cc(O)c12"
+    structure_file: structures/sources/luteolin/pubchem_5280445_2d.sdf
+
+    stereochemical_specification: "No potential stereocenters detected in the PubChem reference structure"
+
+    charge: 0
+
+    protonation_state_id: neutral_candidate
+    protonation_description: "Neutral PubChem reference structure; not yet confirmed against the paper"
+
+    conformer_id: etkdg_001
+
+    identity_approved: false
+    identity_approved_by: "VALIDATION_TEST_ONLY"

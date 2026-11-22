@@ -84,8 +84,21 @@ def audit():
 
 
 def main():
+    if sys.argv[1:2] == ["structures"]:
+        parser = argparse.ArgumentParser(prog="python -m src.cli structures")
+        parser.add_argument("action", choices=["prepare"])
+        parser.add_argument("--config", required=True, type=Path)
+        parser.add_argument("--dry-run", action="store_true")
+        args = parser.parse_args(sys.argv[2:])
+        from .structure_prep import run_config
+
+        report = run_config(args.config, args.dry_run)
+        print(json.dumps(report, indent=2))
+        raise SystemExit(1 if report["status"] == "error" else 0)
+
     parser = argparse.ArgumentParser(
-        description="Headless workflow for the lemon-balm corrosion-inhibitor paper."
+        description="Headless workflow for the lemon-balm corrosion-inhibitor paper.",
+        epilog="Structure preparation is available via structures prepare --help.",
     )
     parser.add_argument(
         "stage",

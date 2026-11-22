@@ -1,0 +1,92 @@
+# Unresolved study template. Keep only the approved entries in a run config.
+schema_version: 1
+settings:
+  random_seed: 2026
+  num_conformers: 1
+  mmff94: false
+  mmff_max_iterations: 200
+structures:
+  - molecule_id: caryophyllene
+    chemical_name: Caryophyllene
+    source: null
+    source_identifier: null
+    source_kind: null
+    isomeric_smiles: null
+    structure_file: null
+    stereochemical_specification: null
+    charge: null
+    protonation_state_id: null
+    protonation_description: null
+    conformer_id: null
+    identity_approved: false
+    identity_approved_by: null
+  - molecule_id: germacrene
+    chemical_name: Germacrene
+    source: null
+    source_identifier: null
+    source_kind: null
+    isomeric_smiles: null
+    structure_file: null
+    stereochemical_specification: null
+    charge: null
+    protonation_state_id: null
+    protonation_description: null
+    conformer_id: null
+    identity_approved: false
+    identity_approved_by: null
+  - molecule_id: citral
+    chemical_name: Citral
+    source: null
+    source_identifier: null
+    source_kind: null
+    isomeric_smiles: null
+    structure_file: null
+    stereochemical_specification: null
+    charge: null
+    protonation_state_id: null
+    protonation_description: null
+    conformer_id: null
+    identity_approved: false
+    identity_approved_by: null
+  - molecule_id: luteolin
+    chemical_name: Luteolin
+    source: null
+    source_identifier: null
+    source_kind: null
+    isomeric_smiles: null
+    structure_file: null
+    stereochemical_specification: null
+    charge: null
+    protonation_state_id: null
+    protonation_description: null
+    conformer_id: null
+    identity_approved: false
+    identity_approved_by: null
+  - molecule_id: chlorogenic_acid
+    chemical_name: Chlorogenic acid
+    source: null
+    source_identifier: null
+    source_kind: null
+    isomeric_smiles: null
+    structure_file: null
+    stereochemical_specification: null
+    charge: null
+    protonation_state_id: null
+    protonation_description: null
+    conformer_id: null
+    identity_approved: false
+    identity_approved_by: null
+  - molecule_id: rosmarinic_acid
+    chemical_name: Rosmarinic acid
+    source: null
+    source_identifier: null
+    source_kind: null
+    isomeric_smiles: null
+    structure_file: null
+    stereochemical_specification: null
+    charge: null
+    protonation_state_id: null
+    protonation_description: null
+    conformer_id: null
+    identity_approved: false
+    identity_approved_by: null
